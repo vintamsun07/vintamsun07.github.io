@@ -1,0 +1,60 @@
+
+<html>
+    <head>
+        <title>User Registration</title>
+        <link rel="stylesheet" type="text/css" href="./css/styleUserRegistration.css">
+        <link rel="connection" href="connection.php">
+       
+    </head> 
+
+    <body>
+
+<div class="container">
+
+            <p class="paragraph"> Registration Form</p>
+            <br>
+
+        <form action="connection.php" method="POST">
+             <div class="form-group">
+                <p class="label">Name</p>
+                <input type="text" name="fullname" placeholder="Enter Full Name" Class="inpt" name="fullname">
+            </div>
+        <br>
+            <div class="form-group">
+                <p class="label">Email Address</p>
+                <input type="text" name="email" placeholder="Enter Email" Class="inpt" name="email">       
+            </div>
+        <br>  
+             <div class="form-group">
+                  <p class="label">User Name</p>
+                    <input type="text" name="username" placeholder=" Enter Username" Class="inpt" name="username">
+            </div>
+        <br>
+        
+        <p class="label">Password</p>
+        <input type="password" name="password" placeholder="Enter Password" Class="inpt">
+        <br>
+            <div class="form-group">
+                 <p class="label">Verify Password</p>
+                 <input type="password" name="veriifypassword" placeholder="Verify" Class="inpt" name="password">
+            </div>
+        <br>
+            <div class="form-group">
+                <p class="label">Gender</p>
+                <select class="GenderSelect" name="gender">
+                    
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        <br>
+        <div class="sign-up">
+        <input type="submit" name="signup" class="btn btn-primary"/>
+        </div>
+    </form> 
+   
+</div>
+
+    </body>
+
+</html>

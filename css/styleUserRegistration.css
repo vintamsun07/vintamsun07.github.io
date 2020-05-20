@@ -1,0 +1,99 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../Image/imageback.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    
+}
+
+.container
+{
+    
+        background: #fff;
+        width: 600px;
+        height: 800;
+        border-radius: 10px;
+        margin: 0 auto;
+        border-bottom: 1px solid #CCC;
+        margin-top: 100px;
+        opacity: 0.9;
+}
+
+.paragraph
+{
+    background: #2980b9;
+    color: white;
+    font-family: Arial;
+    font-size: 25px;
+    text-align: center;   
+    padding: 15px 0px 15 0px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.inpt 
+{
+ width: 400px;
+ height: 40px;
+ border-radius: 10px;
+ border: none;
+ border: 1px solid #CCC;
+ margin-left: 95px;
+ padding-left: 5px;
+ border-left: 3px solid #2980b9;
+ margin-top: 10px;
+ 
+}
+
+.label
+{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding: 0;
+    font-weight: bold;
+    margin-left: 95px;
+    
+}
+
+.GenderSelect
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 95px;
+    margin-top: 10px;
+    border-left: 3px solid #2980b9;
+  
+}
+
+.sign-up input[type="submit"]
+{
+	border: none;
+	outline: none;
+    height: 40px;
+    width: 150px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 18px;
+    border-radius: 10px;
+
+    margin-top: 20px;
+    margin-left: 95px;
+}
+.sign-up input[type="submit"]:hover
+{
+	cursor:pointer;
+	background: 00BFFF;
+	color: #000;
+}

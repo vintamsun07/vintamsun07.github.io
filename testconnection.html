@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>User Registration</title>
+    
+        <script type="text/javascript">
+            var conn = new ActiveXObject("ADODB.Connection")
+            var conn_str = ""
+            var db_Host = ""
+            var db_User = ""
+            var db_Password = ""
+            var db_Provider = ""
+            var db_Default = ""
+
+
+            function Show_Data()
+            {
+                db_Host="localhost";
+                db_User="Admin";
+                db_Password="@dministrat0r";
+                db_Provider="SQLOLEDB";
+                db_Default="travel_soft";
+                conn_str= "Provider="+db_Provider+";Data Source="+db_Host+"; User Id="+db_User+"; password="+db_Password+"; Initial Catalog="+db_Default;
+          
+           show_data_from_database();
+            }
+           function show_data_from_database()
+           {
+               try
+                 {
+        
+                    conn.Open(conn_str)
+                    var reader = new ActiveXObject("ADODB.Recordset");
+                    var strQuery = "SELECT * FROM UserList";
+                        reader.Open(strQuery, conn);
+                        reader.MoveFirst();
+                        while (!reader.eof)
+                                {
+                                    document.write(reader.fields(0) + "&nbsp;&nbsp;&nbsp;")
+                                    document.write(reader.fields(1) + "&nbsp;&nbsp;&nbsp;")
+                                    document.write(reader.fields(2) + "&nbsp;&nbsp;&nbsp;")
+                                    document.write(reader.fields(3) + "&nbsp;&nbsp;&nbsp;")
+                                    document.write(reader.fields(4) + "<br/>")
+                                    reader.Movenext();
+                                }
+                 }
+                catch(e)
+                  {
+                    alert("Connection Error")
+                  }
+           }      
+        </script>
+    </head> 
+
+    <body onload="Show_Data()">
+
+    </body>
+
+</html>
